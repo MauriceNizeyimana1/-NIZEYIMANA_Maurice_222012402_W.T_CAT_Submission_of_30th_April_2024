@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- My Name is Maurice NIZEYIMANA -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body {
+            background-color: yellow;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form-container {
+            background-color: beige;
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        h2 {
+            background-color: skyblue;
+            width: 550px;
+            height: 60px;
+            line-height: 50px;
+            border-radius: 10px 10px 0 0;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        .signup-link {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .signup-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <!-- Login Form Header -->
+        <h2>Login Form</h2>
+        <!-- Login Form -->
+        <form action="login.php" method="post" class="form-container">
+            <!-- Email Input -->
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+            <!-- Password Input -->
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            <!-- Forgot Password Link -->
+            <p style="font-size: 20px;"><a href="resetpassword.php">Forgot Password</a></p>
+
+            <!-- Login and Cancel Buttons -->
+            <input type="submit" value="Login">
+            <input type="reset" value="Cancel">
+            
+            <!-- New Account Link -->
+            <p class="signup-link"><i>Don't you have an account?</i> <a href="register.html">Create New Account</a></p>
+        
+        </form>
+        
+    </center>
+</body>
+</html>
